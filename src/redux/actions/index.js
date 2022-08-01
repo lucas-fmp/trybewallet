@@ -37,3 +37,8 @@ export const savingInputs = (state) => ({
   type: 'SAVE_INPUTS',
   payload: state,
 });
+
+export const deletingExpense = (expenses) => ({
+  type: 'DELETE_EXPENSE',
+  payload: expenses,
+});

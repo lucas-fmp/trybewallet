@@ -8,7 +8,7 @@ class Header extends Component {
     const { state } = this.props;
     const { wallet: { expenses } } = state;
     if (expenses.length === 0) {
-      return 0;
+      return sum.toFixed(2);
     }
     expenses
       .map((expense) => [expense.value, expense.currency, expense.exchangeRates])
