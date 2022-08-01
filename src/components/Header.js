@@ -13,10 +13,8 @@ class Header extends Component {
     expenses
       .map((expense) => [expense.value, expense.currency, expense.exchangeRates])
       .forEach((array) => {
-        console.log(array);
         const object = array[2][array[1]];
         const value = array[0];
-        console.log(object);
         const { ask } = object;
         const multiply = ask * value;
         sum += multiply;
