@@ -25,6 +25,11 @@ const wallet = (state = INITIAL_STATE, action) => {
       error: action.payload,
       isFetching: false,
     };
+  case 'SAVE_INPUTS':
+    return {
+      ...state,
+      expenses: [...state.expenses, action.payload],
+    };
   default:
     return state;
   }

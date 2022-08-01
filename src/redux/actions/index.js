@@ -32,3 +32,8 @@ export function currencies() {
     }
   };
 }
+
+export const savingInputs = (state) => ({
+  type: 'SAVE_INPUTS',
+  payload: state,
+});
