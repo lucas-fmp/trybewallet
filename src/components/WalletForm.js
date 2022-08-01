@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { currencies, savingInputs } from '../redux/actions';
 import getCurrencyAPI from '../services/currencyAPI';
+import Table from './Table';
 
 const Alimentação = 'Alimentação';
 
@@ -149,6 +150,7 @@ class WalletForm extends Component {
             Adicionar despesa
           </button>
         </form>
+        <Table />
       </div>
     );
   }
